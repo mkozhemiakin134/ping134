@@ -94,6 +94,10 @@ while game:
         rocket2.reset()
         ball.update()
         ball.reset()
+
+    if finish != True:
+        ball.rect.x += speed_x
+        ball.rect.y += speed_y
       
 
     display.update()
